@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f5ff8f;
+}
+
+body {
+  background-color: #f5ff8f;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.l-debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  font-size: 12px;
+  display: none;
+}
+
+.l-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  letter-spacing: 0.025em;
+}
+
+.l-text .inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.l-text .inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.000001;
+}
+
+.l-text .inner img.-show {
+  opacity: 1;
+}
+
+.l-text .inner img:first-child {
+  position: relative;
+}
+
+.l-text .inner span.-hide {
+  visibility: hidden;
+}
+
+
+
+
+.link {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: inherit;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #000;
+  z-index: 9999;
+}
